@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(95, 95, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background: white;
+    border-radius: 8px;
+    width: 400px;
+    padding: 30px;
+}
+.container header{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.container form{
+    margin: 30px 0 20px 0;
+}
+form :where(input,select,button){
+    width: 100%;
+    outline: none;
+    border: none;
+}
+form p{
+    font-size: 17px;
+}
+form input{
+    height: 40px;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+form input:focus{
+    border: 2px solid lightblue;
+}
+form .drop-down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-down .select-box{
+    display: flex;
+    width: 115px;
+    height: 45px;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.select-box select::-webkit-scrollbar{
+    width: 8px;
+}
+.select-box select::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 6px;
+}
+.select-box select::-webkit-scrollbar-track{
+    background: white;
+}
+.select-box select{
+    width: auto;
+    margin: 0 -5px 0 5px;
+}
+.select-box img{
+    width: 30px;
+    height: 30px;
+}
+.drop-down .icon{
+    font-size: 20px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.exchange-rate{
+    font-size: 17px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+form button{
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background:rgb(95, 95, 196) ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+form button:hover{
+    color: rgb(95, 95, 196);
+    background: rgb(180, 180, 180);
+}
